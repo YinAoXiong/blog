@@ -1,14 +1,14 @@
-#Hux Blog
+#YinAoXiong Blog
 
-###[View Live Hux Blog &rarr;](https://huangxuan.me)
+###[View Live YinAoXiong Blog &rarr;](https://YinAoXiong.me)
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](http://YinAoXiong.me/img/blog-desktop.jpg)
 
 
 
 ## Boilerplate (beta)
 
-Want to clone a boilerplate instead of my buzz blog? Here comes this!  
+Want to clone a boilerplat instead of my buzz blog? Here comes this!  
 
 ```
 $ git clone git@github.com:Huxpro/huxblog-boilerplate.git

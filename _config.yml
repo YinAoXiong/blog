@@ -1,6 +1,6 @@
 # Site settings
 title: YinAoXiong Blog
-SEOTitle: 尹傲雄的博客 | Hux Blog
+SEOTitle: 尹傲雄的博客 | YinAoXiong Blog
 header-img: img/home-bg.jpg
 email: yinaoxiong@gmail.com
 url: "https://yinaoxiong.me"            # your host, for absolute URL
@@ -46,7 +46,7 @@ kramdown:
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: blog.yinaoxiong.cn
 
 
 
