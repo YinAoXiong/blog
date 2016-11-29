@@ -1,72 +1,26 @@
 # Site settings
-title: YinAoXiong Blog
-SEOTitle: 尹傲雄的博客 | YinAoXiong Blog
+title: 尹傲雄的博客
 header-img: img/home-bg.jpg
-email: yinaoxiong@gmail.com
-url: "https://yinaoxiong.me"            # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
-
-
-# SNS settings
-RSS: false
-github_username:    YinAoXiong
-# linkedin_username:  firstname-lastname-idxxxx
-
-
-
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-
-# Analytics settings
-# Baidu Analytics 
-# ba_track_id: [your track id]
+email: 1273557346@qq.com
+copyright_name: Your/Project/Corporate Name
+description: "第一次尝试搭博客写博客"
+baseurl: "/startbootstrap-clean-blog-jekyll"
+url: "http://blog.yinaoxiong.cn"
+twitter_username: _iblackandwhite
+github_username:  YinAoXiong
+facebook_username:  尹傲雄
+email_username:  1273557346@qq.com
 
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: blog.yinaoxiong.cn
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
 
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/post-sample-image.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
-
+gems: [jekyll-paginate, jekyll-feed]
+encoding: UTF-8
