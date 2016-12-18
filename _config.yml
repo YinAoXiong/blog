@@ -10,7 +10,6 @@ twitter_username: _iblackandwhite
 github_username:  YinAoXiong
 facebook_username:  尹傲雄
 email_username:  1273557346@qq.com
-weibo_username:  huxpro
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
@@ -18,6 +17,8 @@ weibo_username:  huxpro
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM 
 highlighter: rouge
 permalink: pretty
 paginate: 5
