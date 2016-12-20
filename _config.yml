@@ -18,9 +18,7 @@ email_username:  1273557346@qq.com
 # Build settings
 markdown: kramdown
 kramdown:
-  input: GFM
-  use_coderay: true
-  hard_wrap: false
+  input: GFM 
 highlighter: rouge
 permalink: pretty
 paginate: 5
