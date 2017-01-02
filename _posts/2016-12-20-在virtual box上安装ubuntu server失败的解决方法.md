@@ -8,6 +8,9 @@ date: 2016-12-20 22：24
 
 author: "尹傲雄"
 
+categories: [linux]
+
+
 ---
 今天想在virtual box上安装ubuntu server 16.04结果在安装的过程中总是显示一个错误，如下图所示。
 ![这里写图片描述](http://img.blog.csdn.net/20161220221039316?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWluYW94aW9uZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)

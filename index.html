@@ -2,7 +2,8 @@
 layout: page
 description: My first blog
 ---
-<script>
+
+  <div  class="right"> <script>
   (function() {
     var cx = '001504123095752350927:rd82c9hdv54';
     var gcse = document.createElement('script');
@@ -13,7 +14,7 @@ description: My first blog
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
+<gcse:search></gcse:search></div>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
