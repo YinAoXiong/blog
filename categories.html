@@ -1,0 +1,27 @@
+---
+layout: page
+title: Categories
+header: Posts By yinaoxiong
+group: navigation
+---
+<div class="category">
+    <ul>
+        {% for category in site.categories %}
+            <li><a href="{{ site.BASE_PATH }}/category.html#{{ category[0] }}-ref">
+            {{ category[0] }}  <!-- 类别名 -->
+            <span>{{ category[1].size }}</span>  <!-- 该类下 post 数量 -->
+            <!-- <=> {{ site.categories[category].size }} -->
+            </a></li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="post-category">
+    {% for category in site.categories %}
+      <h2 id="{{ category[0] }}-ref">{{ category[0] }}</h2>
+      <ul class="post-list">
+        {% for post in category[1] %}  <!-- 遍历类别下所有 post -->
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+</div>
