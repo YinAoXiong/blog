@@ -2,10 +2,6 @@
 
 layout: post
 
-title: "---
-
-layout: post
-
 title: "纵横字谜的答案(Crossword Answers UVa232)"
 
 date: 2017-3-11 20:28
