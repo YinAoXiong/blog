@@ -4,6 +4,10 @@ layout: post
 
 title: "在linux上使用git+github传文件到云服务器"
 
+keywords: Linux，git，github
+
+description: 在linux上使用git+github传文件到云服务器
+
 date: 2016-12-22 22：28
 
 author: "尹傲雄"
@@ -21,9 +25,7 @@ categories: [linux]
 
                  git config --global user.name "your name"   //配置用户名
 
-                 git config --global user.email "your email"    //配置email 
+                 git config --global user.email "your email"    //配置email
 
 
 这样git的配置和github的链接就配好了，使用`git clone`命令就可以克隆自己的项目了。感觉这样子做还是很方便，也很快捷。其他的有关git和github的操作可以去看廖雪峰的博客，百度一下就有了。
-
-                 

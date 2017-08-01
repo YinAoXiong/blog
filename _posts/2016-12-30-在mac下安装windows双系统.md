@@ -4,6 +4,10 @@ layout: post
 
 title: "在mac下安装windows双系统"
 
+keywords: mac，windows，双系统
+
+description: 在mac下安装windows双系统手记
+
 date: 2016-12-30 16：28
 
 author: "尹傲雄"

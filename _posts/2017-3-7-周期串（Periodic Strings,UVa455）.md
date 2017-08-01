@@ -4,6 +4,10 @@ layout: post
 
 title: "周期串（Periodic Strings,UVa455）"
 
+keywords: 周期串，Periodic Strings,UVa455
+
+description: 周期串（Periodic Strings,UVa455）题解
+
 date: 2017-3-7 23:50
 
 author: "尹傲雄"

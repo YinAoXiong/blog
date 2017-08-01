@@ -4,6 +4,10 @@ layout: post
 
 title: "elementary os初体验"
 
+keywords: elementary os
+
+description: elementary os使用体验
+
 date: 2017-3-22 23:15
 
 author: "尹傲雄"

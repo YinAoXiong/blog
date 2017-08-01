@@ -4,6 +4,10 @@ layout: post
 
 title: "棋盘问题的递归解决"
 
+keywords: 棋盘问题，递归
+
+description: 棋盘问题的递归解决
+
 date: 2016-12-20 22：13
 
 author: "尹傲雄"
@@ -12,7 +16,7 @@ categories: [c语言]
 
 ---
 具体的题目是：
-有一个 的方格棋盘，恰有一个方格是黑色的，其它为白色。你的任务是用包含3个方格的L型牌覆盖所有白色方格。黑方格不能被覆盖，且任意一个白色方格不能同时被两个或者多个L型牌覆盖。如图为L型牌的4种旋转方式。 
+有一个 的方格棋盘，恰有一个方格是黑色的，其它为白色。你的任务是用包含3个方格的L型牌覆盖所有白色方格。黑方格不能被覆盖，且任意一个白色方格不能同时被两个或者多个L型牌覆盖。如图为L型牌的4种旋转方式。
 ![4种方式](http://img.blog.csdn.net/20161220122429927?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWluYW94aW9uZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 问题分析：

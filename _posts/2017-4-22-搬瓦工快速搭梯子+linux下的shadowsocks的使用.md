@@ -4,6 +4,10 @@ layout: post
 
 title: "搬瓦工快速搭梯子+linux下的shadowsocks的使用"
 
+keywords: 搬瓦工，Linux，shadowsocks
+
+description: 使用搬瓦工vps搭建shadowsocks，shadowsocksLinux客户端的使用
+
 date: 2017-4-22 00:40
 
 author: "尹傲雄"
