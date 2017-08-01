@@ -4,6 +4,10 @@ layout: post
 
 title: "在virtual box上安装ubuntu server失败的解决方法"
 
+keywords: virtual box，安装ubuntu server
+
+description: 在virtual box上安装ubuntu server失败的解决方法
+
 date: 2016-12-20 22：24
 
 author: "尹傲雄"

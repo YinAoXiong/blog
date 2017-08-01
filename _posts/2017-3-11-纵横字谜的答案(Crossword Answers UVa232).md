@@ -4,6 +4,10 @@ layout: post
 
 title: "纵横字谜的答案(Crossword Answers UVa232)"
 
+keywords: 纵横字谜的答案，Crossword Answers UVa232
+
+description: 纵横字谜的答案，Crossword Answers UVa232题解
+
 date: 2017-3-11 20:28
 
 author: "尹傲雄"
@@ -69,7 +73,7 @@ int main()
 			{
 				if (isupper(a[i][j]))                                 //判断是不是大写字母
 				{
-				
+
 					if (is_the_begin(a, i, j))
 					{
 						if (begin+1<10)
@@ -160,11 +164,10 @@ int main()
 				cout << "  " << b[i].id << '.' << b[i].z << endl;
 			else
 				cout << ' ' << b[i].id << '.' << b[i].z << endl;
-			
+
 		}
-	
-			
+
+
 	}
 }
 ```
-

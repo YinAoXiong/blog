@@ -4,6 +4,10 @@ layout: post
 
 title: "正方形（squares,UVa201)"
 
+keywords: squares,UVa201
+
+description: squares,UVa201题解
+
 date: 2017-4-6 11:45
 
 author: "尹傲雄"
@@ -126,7 +130,7 @@ int main()
 		}
 		if (0 == temp)
 			cout << "No completed squares can be found." << endl;
-	
+
 
 	}
 }

@@ -4,6 +4,10 @@ layout: post
 
 title: "第一篇博客"
 
+keywords: 博客，github page
+
+description: 使用github page搭建博客
+
 date: 2016-12-18 20:58:00
 
 author: "尹傲雄"
@@ -62,4 +66,3 @@ github的默认博客域名是yourusername.github.io。想要一个个性化的�
 
 
 有兴趣的话可以去我的博客看一下，现在还是很简陋啦，也是直接借用别人的模板没做什么修改，附上链接<a href="http://blog.yinaoxiong.cn">尹傲雄的博客</a>
-
