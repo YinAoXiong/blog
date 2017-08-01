@@ -4,7 +4,7 @@ layout: post
 
 title: "CodeForces - 803C Maximal GCD(贪心)"
 
-keywords: acm，CodeForces - 803C Maximal GCD，弹性算法
+keywords: acm，CodeForces - 803C Maximal GCD，贪心算法
 
 description: CodeForces - 803C Maximal GCD的题目解释和题解
 
