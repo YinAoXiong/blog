@@ -46,3 +46,6 @@ sudo apt-get install kubuntu-desktop
 
  到这里要安装的就都安装好了。接下来就是一些配置了，更改一下/var/www这个文件夹的权限，输入`sudo chmod 777 /var/www -R`将其权限改为可读可写可执行。这时你在浏览器输入localhost/phpmyadmin的话会发现一个404错误，这时输入`sudo ln -s /usr/share/phpmyadmin /var/www/html/`创建一个链接就可以了。再次输入结果发现虽然没有404错误但是显示的是一堆代码如下图所示：![这里写图片描述](http://img.blog.csdn.net/20161222221024744?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWluYW94aW9uZw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
  登录界面无法显示直接显示php代码。查找资料发现是忘了安装apache的php拓展，apache无法显示php页面，运行下面的命令`sudo apt-get install libapache2-mod-php7.0`之后就可以正确显示了。好了基本的配置就完成了。
+
+ 解决缺少mbstring扩展的问题？  
+ 这时php7.0-mbstring模块其实在第2步里安装phpmyadmin的时候已经一起安装过了，系统里并不缺少php7.0-mbstring模块，但为什么还会报错呢？因为Apache需要重启或者重新载入，才能让新的模块开始工作。要重启Apache服务很简单，使用下面一个命令：`service apache2 restart`
