@@ -27,7 +27,7 @@ $$f(x)=
 \end{cases}
 $$
 这样就将线性回归的输出值映射到了{0，1}，但是这个函数不是连续的这样在后面训练的时候就非常不好处理。然后前辈先人们希望找到一个和它非常相似的一个函数，同时数学性质要比较好要单调可微，然后他们就找到了非常著名的Sigmoid函数，就和它的首字母一样函数的形状就像一个横过来的Sigmoid函数
-<center>![sigmoid function]({{ site.baseurl }}/img/logistic_regression_ex2.PNG)</center>
+![sigmoid function]({{ site.baseurl }}/img/logistic_regression_ex2.PNG)
 这样logistic regression的假设函数就确定了是
 $$h_θ(x)=g(θ^Tx)$$
 其中$g(x)$也就是前面提到的sigmoid函数，中间的$θ^Tx$也就是原来的线性回归部分。
