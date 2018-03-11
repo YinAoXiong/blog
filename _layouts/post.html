@@ -47,9 +47,10 @@ layout: default
 </article>
 <div id="comment_container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="http://blog.geekaholic.cn/js/thirdParty/gitment.browser.min.js"></script>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
+        id: '{{page.date}}',
         owner: 'YinAoXiong',
         repo: 'blog_comment',
         oauth: {
