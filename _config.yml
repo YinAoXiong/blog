@@ -2,10 +2,10 @@
 title: 尹傲雄的博客
 header-img: img/home-bg.jpg
 email: 1273557346@qq.com
-copyright_name: yinaoxiong/blog
+copyright_name: yinaoxiong's blog All Rights Reserved
 #description: "尹傲雄的博客"
-baseurl: "https://blog.yinaoxiong.cn"
-url: "https://blog.yinaoxiong.cn"
+baseurl: "https://blog.yinaoxiong.cn/"
+url: "https://blog.yinaoxiong.cn/"
 twitter_username: _iblackandwhite
 github_username:  YinAoXiong
 facebook_username:  yinaoxiong
@@ -14,6 +14,11 @@ email_username:  aoxiongyin@qq.com
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 google_tracking_id: UA-89678848-1
+
+# Baidu autopush and Baidu Analytics
+# To enable baidu autopush and baidu analytics,uncoment below line with true and a baidu tracking ID
+open_baiduAutoPush: true
+baidu_tracking_id: 0a3215e31b6e078f9c3028fc00baafa3
 
 # Build settings
 markdown: kramdown
