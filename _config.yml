@@ -4,8 +4,6 @@ header-img: img/home-bg.jpg
 email: 1273557346@qq.com
 copyright_name: yinaoxiong's blog All Rights Reserved
 #description: "尹傲雄的博客"
-baseurl: "https://blog.yinaoxiong.cn"
-url: "https://blog.yinaoxiong.cn"
 twitter_username: _iblackandwhite
 github_username:  YinAoXiong
 facebook_username:  yinaoxiong
@@ -20,6 +18,13 @@ google_tracking_id: UA-89678848-1
 open_baiduAutoPush: true
 baidu_tracking_id: 0a3215e31b6e078f9c3028fc00baafa3
 
+# The config of comment system gitalk
+gitalk_enable: true
+gitalk_clientID: 66d905190895554db17b
+gitalk_clientSecret: 1e3cb5aa4b5ced7987c7d0e87f9f09ad8bbffc14
+gitalk_repo: blog-s-comment
+gitalk_owner: YinAoXiong
+gitalk_admin: YinAoXiong
 # Build settings
 markdown: kramdown
 kramdown:
