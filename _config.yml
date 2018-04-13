@@ -20,11 +20,11 @@ baidu_tracking_id: 0a3215e31b6e078f9c3028fc00baafa3
 
 # The config of comment system gitalk
 gitalk_enable: true
-gitalk_clientID: '66d905190895554db17b'
-gitalk_clientSecret: '1e3cb5aa4b5ced7987c7d0e87f9f09ad8bbffc14'
-gitalk_repo: 'blog-s-comment'
-gitalk_owner: 'YinAoXiong'
-gitalk_admin: 'YinAoXiong'
+gitalk_clientID: 66d905190895554db17b
+gitalk_clientSecret: 1e3cb5aa4b5ced7987c7d0e87f9f09ad8bbffc14
+gitalk_repo: blog-s-comment
+gitalk_owner: YinAoXiong
+gitalk_admin: YinAoXiong
 # Build settings
 markdown: kramdown
 kramdown:
