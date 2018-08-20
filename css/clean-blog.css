@@ -401,3 +401,13 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+/*图片水平居中*/
+img {
+  margin:0 auto;
+  display:block;
+}
+/*公式自适应屏幕*/
+.official{
+  width: 100%;
+  overflow-x: scroll
+}
