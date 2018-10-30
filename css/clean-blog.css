@@ -422,3 +422,12 @@ img {
 .emoji {
   display: inline;
 }
+.license {
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 16px;
+}
+.license a{
+  text-decoration: none;
+}
