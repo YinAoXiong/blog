@@ -272,9 +272,17 @@ footer .list-inline {
   padding: 0;
 }
 footer .copyright {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 0;
+}
+footer .word {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .word a {
+  text-decoration: none
 }
 .floating-label-form-group {
   font-size: 14px;
