@@ -1,0 +1,50 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+defaults: &defaults
+    # Specify service dependencies here if necessary
+    # CircleCI maintains a library of pre-built images
+    # documented at https://circleci.com/docs/2.0/circleci-images/
+    # - image: circleci/postgres:9.4
+    docker:
+        - image: circleci/ruby:2.6.0
+    working_directory: ~/repo
+version: 2
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: install dependencies
+          command: |
+            sudo gem update --system
+            sudo gem install bundler -f
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      # 构建博客
+      - run:
+          name: build blog
+          command: |
+            bundle exec jekyll build
+      
+      # 部署到又拍云
+      - run:
+          name: deploy to upyun
+          command: |
+            wget -c http://collection.b0.upaiyun.com/softwares/upx/upx-linux-amd64-v0.2.3
+            mv upx-linux-amd64-v0.2.3 upx
+            chmod +x upx
+            ./upx login yax-blog $userName $password
+            ./upx sync _site/ / --delete
