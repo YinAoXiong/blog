@@ -33,7 +33,20 @@ kramdown:
 highlighter: rouge
 permalink: /:year/:month/:day/:title.html
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - less
+  - README.md
+  - LICENSE
+  - any_additional_item
 
 plugins: [jekyll-paginate, jekyll-feed,jekyll-sitemap]
 
