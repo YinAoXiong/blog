@@ -1,8 +1,15 @@
 # yinaoxiong's blog
+
+[![CircleCI](https://circleci.com/gh/YinAoXiong/blog.svg?style=svg)](https://circleci.com/gh/YinAoXiong/blog)
+
 [view blog](https://blog.yinaoxiong.cn)
+
 ## description
+
 　　A web site to record some thing.
+
 ## License
+
 MIT license.
 Copyright © 2016-2018 yinaoxiong's blog All Rights Reserved
 
