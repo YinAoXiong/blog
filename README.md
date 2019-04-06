@@ -1,7 +1,5 @@
 # yinaoxiong's blog
 
-[![CircleCI](https://circleci.com/gh/YinAoXiong/blog.svg?style=svg)](https://circleci.com/gh/YinAoXiong/blog)
-
 [view blog](https://blog.yinaoxiong.cn)
 
 ## description
