@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'circleci/ruby:2.6.0'
+      image 'ruby:2.6.0'
     }
 
   }
@@ -9,9 +9,9 @@ pipeline {
     stage('build') {
       steps {
         sh 'gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/'
-        sh 'sudo gem install bundler -f'
+        sh 'gem install bundler'
         sh 'bundle config mirror.https://rubygems.org https://gems.ruby-china.com'
-        sh 'bundle install --jobs=4 --retry=3 --path vendor/bundle'
+        sh 'bundle install --jobs=4 --retry=3'
         sh 'bundle exec jekyll build'
       }
     }
