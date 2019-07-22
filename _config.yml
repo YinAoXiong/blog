@@ -46,6 +46,7 @@ exclude:
   - less
   - README.md
   - LICENSE
+  - Jenkinsfile
   - any_additional_item
 
 plugins: [jekyll-paginate, jekyll-feed,jekyll-sitemap]
