@@ -1,0 +1,31 @@
+# Ruby
+# Package your Ruby project.
+# Add steps that install rails, analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseRubyVersion@0
+  inputs:
+    versionSpec: '>= 2.5'
+
+- script: |
+    gem install bundler
+    bundle install --retry=3 --jobs=4
+  displayName: 'bundle install'
+
+- script: bundle exec jekyll build
+  displayName: 'bundle exec jekyll'
+
+- script: |
+    set -x
+    wget -c http://collection.b0.upaiyun.com/softwares/upx/upx-linux-amd64-v0.2.4 -O upx
+    chmod +x upx
+    ./upx login yax-blog $(UPX_USER) $(UPX_PSW)
+    ./upx sync _site/ / --delete
+  displayName: deploy
