@@ -1,14 +1,14 @@
 # Site settings
-title: 尹傲雄的小站
+title: 我的生活学习日志
 header-img: https://cdn.yinaoxiong.cn/image/blog/home-bg.jpg
 email: aoxiongyin@qq.com
 url: https://blog.yinaoxiong.cn
 copyright_name: yinaoxiong's blog All Rights Reserved
 #description: "尹傲雄的博客"
-twitter_username: _iblackandwhite
-github_username:  YinAoXiong
-facebook_username:  yinaoxiong
-email_username:  aoxiongyin@qq.com
+# twitter_username: _iblackandwhite
+# github_username:  YinAoXiong
+# facebook_username:  yinaoxiong
+# email_username:  aoxiongyin@qq.com
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
