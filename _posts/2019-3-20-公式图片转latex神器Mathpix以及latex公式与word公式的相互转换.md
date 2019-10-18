@@ -23,7 +23,7 @@ categories: [杂类]
 
 　　调了其中比较复杂的第十四个公式来测试了一下，效果非常的喜人，非常的准确没有一点错误。公式图片和最后的结果对照如下所示。
 
-![function](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=ZXA5Wk&share=EQQSKOsPeLdNiTDxRA98AJ4BovQdNoBPnglcGH8Zvc3Fyg&cid=26b991a5-da57-4d59-a8b7-132438eccaf4)
+![function](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/function.jpg)
 
 <div class="official">
 $$
@@ -37,17 +37,17 @@ $$
 
 　　得到latex公式之后我就开心的把它复制到了word中去了，因为上次发现在word中开启latex后就可以直接写latex公式了。开启方式如下图所示在插入公式的时候选中latex就可以了。
 
-![openLatexInWord](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=8kkxRj&share=ERlAqHgDIDdBlNFh2v3lOe4BgBQe_DeRXdXIhpPny5OH8g&cid=c0c4b41e-c0b6-4991-8acf-e3790f22071b)
+![openLatexInWord](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/openLatexInWord.png)
 
 　　但是我发现还是有坑啊，简单一点的还好，复杂一点的长一点的有的时候会转换不了，有的时候会转换出错。例如上面那个公式在word里面转换成了这个样子：
 
-![](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=zjOVap&share=ER867lb2CONOm4V8-c3BX6kBgn7n1rLjM6OlTWT1jXlO5A&cid=4893e9b0-8103-46a1-aea1-687e763b7046)
+![wordFunction](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/wordFunction.png)
 
 ## 方法二：latex转MathML后粘贴（推荐）
 
 　　后面在Google搜了一下之后发现可以先将latex公式转换为MathML后粘贴到word（记得选择为只保留文本，不然有样式信息会不成功的），之后word会自动将MathML显示为公式。尝试了一下发现真的可以而且效果非常好，上面的公式在使用MathML粘贴到word中的结果如下所示：
 
-![rightWordFunction](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=XTGThb&share=EaVMUc1FfDtJvZvQugV0LMYBLm1ATftSyMR_NoyN6p7PZA&cid=6105834b-df77-48d0-ab82-7740f4915170)
+![rightWordFunction](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/rightWordFunction.png)
 
 至于latex公式如何转换为MathML，有挺多的方法的。在markdown神器typora中可以**右键选中公式然后依次选择公式-》复制到MSWord**，然后到word里面直接粘贴就可以了。或者可以到这个网站：[http://johnmacfarlane.net/texmath](http://johnmacfarlane.net/texmath)，它提供在latex转MathML的服务。
 
@@ -65,11 +65,11 @@ $$
 
 先点击箭头指向的小箭头打开公式选项：
 
-![openFunctionSet](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=lKSMpq&share=EbyvKqXmljZJuZGAqbbqhLsBDnaJVEj1WwoBk1p7A7FBaQ&cid=43e25e22-0291-476a-b9d4-1b6b59350c84)
+![openFunctionSet](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/openFunctionSet.png)
 
 然后将复制公式时选项切换为MathML：
 
-![changeFunctionSet](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=lFEUdn&share=EVaR_uwoTTRGkLE9YUtExwABspAazjOM3wLe5udhK_ihUQ&cid=7b0d4477-e011-4d45-926e-43153ee4d451)
+![changeFunctionSet](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/changeFunctionSet.png)
 
 在这之后之间复制公式就是得到MathML的纯文本了，然后再到这个网站：[http://johnmacfarlane.net/texmath](http://johnmacfarlane.net/texmath)，它可以将MathML转换为latex。
 

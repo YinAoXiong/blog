@@ -129,7 +129,7 @@ pipeline {
 
 在build中点击Jenkins按照要求填写好你就可以获得你想要的徽标了，我的填写方式如下所示。
 
-![配置](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=toDnkF&share=ES5jnE9rxdFNrI42h64U3VkByG7dSoWXqskJFPeUC3Sjmg&cid=6c1d45e1-5170-42f2-b2ec-95565289bb0e)
+![config](https://cdn.yinaoxiong.cn/image/posts/2019-4-7/config.png)
 
 将my-blog更换成你自己的job名称应该就可以了，需要注意的是Jenkins默认是不允许匿名查看的，所以直接上去一顿操作是不行的。需要先用管理员账号在 系统管理》全局安全设置》访问控制 里面勾选允许匿名只读访问才行。如果你不想这么做也可以自己使用badges/shields搭建服务，然后按照这个文档：[Server Secrets](https://github.com/badges/shields/blob/master/doc/server-secrets.md)，设置好具有权限的Jenkins账号密码，这样就不用把构建信息公开了。
 

@@ -29,7 +29,7 @@ categories: [cv]
 
 　　在介绍之前先放一张论文中的图片方便之后的解释：
 
-![示意图](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=pST4R4&share=Ea6tppnGStxFk6onDkhBtBkBJmWDkDAZf3pPGJVI4EQMmA)
+![示意图](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/image1.JPG)
 
 　　优先级的计算由下面的公式给出：
 <div class="official">
@@ -63,17 +63,17 @@ $$
 
 　　开始不清楚边界上的法线和文中的 isophote 应该如何计算，之后发现边界上的发现不就是mask在边界上的梯度吗:joy:，而 isophote 不就是梯度旋转90度嘛。最后实现完成之后发现如下图的这样简单的图片填充得到的效果都惨不忍睹。
 
-![测试图片1](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=nta5H6&share=ET55LVujTxlNr1JaZeeE1LMB0LK7lTNxrHDWI59ZQav5oA)
+![测试图片1](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/image7.jpg)
 
 结果：
 
-![测试结果1](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=vdeIRg&share=EQjfDoZDhaFJnMvQm7WijPkBPVu_pUlTW93VwzW3tWWekg)
+![测试结果1](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/image7-lab-sq.jpg)
 
 　　下面这些黑块是什么鬼。。。然后就看是什么原有啦，最后发现是查找最佳匹配的这个部分有问题，因为查找最佳匹配的时候是只看孔洞外面那个部分和剩余图片的匹配程度的。所以在圆形下面部分的图片块开始查找的时候会发现下原图中央边界部分的下面匹配的很好（虽然之后在全灰的部分也匹配的很好，但是在相同情况下先匹配的排到了前面），然后灾难就发生了。之后忘里面走回发现在全黑的部分匹配的最好，这就是下面这块黑东东出现的原因了。那么应该咋搞类。
 
 　　在另外一个作者的参考实现中他加入了一个欧拉距离度，在相同情况下优先考虑比较近的图片块。这样做的原因可能是觉得图片的变化是渐进的，相近的图片块比较像吧。最后得到的结果如下所示：
 
-![](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=7G7IsW&share=EW91yJEnbIpIrsWY_be0T9MBwkaT03MDNZ7VRr9qiKWNgg)
+![lab-sq_with_eucldean](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/image7-lab-sq_with_eucldean.jpg)
 
 看起来还是不错的。
 
@@ -85,15 +85,15 @@ $$
 </div>
 　　其中$p$为原有部分的最大梯度，$q$为匹配图片块中的最大梯度，$|cos(\theta)|$用于评估两个结构在方向上的相似性，而后面的这部分则是用于评估在变化剧烈程度上的相似性。最后得到的结果如下所示：
 
-![](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=mxMu6y&share=EcfXcqLNLURCkV9J4IlC-yYBhfyOvLhuYQNKcCCWsOl8gw)
+![lab-sq_with_gradient](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/image7-lab-sq_with_gradient.jpg)
 
 可以看到效果还是不错的。当然也可以尝试一下把这两种方法结合起来一下。之后我把跑了一下其他图片和有的图片的确效果还不错，有的就和论文有一些距离了:joy:。这些结果都可以在原始图片和结果都可以在GitHub中找到（[填充结果](https://github.com/YinAoXiong/paper_reproduce/tree/master/inpaint-object-remover/Region%20Filling%20and%20Object%20Removal%20by%20Exemplar-Based%20Image%20Inpainting/result)），当然你也可以自己跑一遍。一些是一些实验结果：
 
-![result1](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=4HaVHS&share=EfqKWH_zyHZKtniqi8hlZM8BiQOFwxiqv_m286a10qDucQ)
+![result1](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/result1.jpg)
 
-![result2](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=3KFuuQ&share=EaLfz7W-HXFLo2KAtXvz-TYBRiY320dS_gPTg52EVbmTAg)
+![result2](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/result2.jpg)
 
-![result3](https://csueducn-my.sharepoint.com/personal/yinaoxiong_csu_edu_cn/_layouts/15/download.aspx?e=yfwaoB&share=EeYP4J7WEWFOuk6LFpP99m4BFLziOuDLn7fA-dRXGTstfQ)
+![result3](https://cdn.yinaoxiong.cn/image/posts/2018-11-3/result3.jpg)
 
 　　和论文进行比较可以看到还有一些差距的。
 
