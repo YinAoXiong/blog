@@ -4,11 +4,10 @@ header-img: https://cdn.yinaoxiong.cn/image/blog/home-bg.jpg
 email: aoxiongyin@qq.com
 url: https://blog.yinaoxiong.cn
 copyright_name: yinaoxiong's blog All Rights Reserved
-#description: "尹傲雄的博客"
-# twitter_username: _iblackandwhite
-# github_username:  YinAoXiong
+zhihu_username: aoxiongyin
+github_username:  YinAoXiong
 # facebook_username:  yinaoxiong
-# email_username:  aoxiongyin@qq.com
+email_username:  aoxiongyin@qq.com
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
@@ -19,13 +18,9 @@ google_tracking_id: UA-89678848-1
 open_baiduAutoPush: true
 baidu_tracking_id: 0a3215e31b6e078f9c3028fc00baafa3
 
-# The config of comment system gitalk
-gitalk_enable: true
-gitalk_clientID: 66d905190895554db17b
-gitalk_clientSecret: 1e3cb5aa4b5ced7987c7d0e87f9f09ad8bbffc14
-gitalk_repo: blog-s-comment
-gitalk_owner: YinAoXiong
-gitalk_admin: YinAoXiong
+# The config of comment system Valine
+learn_cloud_app_id: zCzN7phMQAaWLOi4Rav9JACY-9Nh9j0Va
+learn_cloud_app_key: vpKsPeua2RHdrGA86myOsrCO
 # Build settings
 markdown: kramdown
 kramdown:

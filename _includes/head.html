@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ " /css/syntax.css " | prepend: site.baseurl }}">
 
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.3.0/css/font-awesome.min.css" integrity="sha256-VBrFgheoreGl4pKmWgZh3J23pJrhNlSUOBek+8Z2Gv0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous">
     <link href='https://fonts.lug.ustc.edu.cn/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.lug.ustc.edu.cn/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
@@ -31,7 +31,7 @@
 MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
     <!-- 公式显示-->
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.3/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha256-kx2d8GALf6/P2n4RsAZL3rBHHKzx3jp90WAj9ymRtaY=" crossorigin="anonymous"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.3/unpacked/MathJax.js?config=TeX-AMS_HTML" integrity="sha256-kx2d8GALf6/P2n4RsAZL3rBHHKzx3jp90WAj9ymRtaY=" crossorigin="anonymous"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,16 +42,5 @@ MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     {% feed_meta %}
     
     {% include ga.html %}
-
-    <!-- 腾讯分享定制接口-->
-    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js"></script>
-    <script type="text/javascript">
-        setShareInfo({
-            title: '{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}',
-            summary: '{{ page.description }}',
-            pic: '{{ "/img/avatar.png" | prepend: site.url }}',
-            url: '{{site.url}}{{page.url}}',
-        });
-    </script>
 
 </head>
