@@ -25,11 +25,11 @@ categories: [杂类]
 
 ![function](https://cdn.yinaoxiong.cn/image/posts/2019-3-20/function.jpg)
 
-<div class="official">
+
 $$
 \hat{H}=\int d r\left(\frac{\hbar^{2}}{2 M_{B}} \nabla \hat{\Psi}_{m}^{+} \nabla \hat{\Psi}_{m}+\frac{c_{0}}{2} \hat{\Psi}_{m}^{+} \hat{\Psi}_{m_{1}}^{+} \hat{\Psi}_{m_{1}} \hat{\Psi}_{m}+\frac{c_{2}}{2} \hat{\Psi}_{m_{1}}^{+} \hat{\Psi}_{m_{2}}^{+} F_{m_{1} m_{4}} F_{m_{2} m_{3}} \hat{\Psi}_{m_{3}} \hat{\Psi}_{m_{4}}\right)
 $$
-</div>
+
 
 # latex转word
 

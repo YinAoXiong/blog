@@ -417,7 +417,7 @@ img {
 /*公式自适应屏幕*/
 .official{
   width: 100%;
-  overflow-x: scroll
+  overflow-x: auto
 }
 .emoji {
   display: inline;
