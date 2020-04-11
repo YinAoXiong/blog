@@ -27,7 +27,7 @@ kramdown:
   input: GFM
 highlighter: rouge
 permalink: /:year/:month/:day/:title.html
-paginate: 5
+paginate: 10
 exclude:
   - Gemfile
   - Gemfile.lock
