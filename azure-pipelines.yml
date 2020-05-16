@@ -15,6 +15,13 @@ steps:
     versionSpec: '2.6.6'
 
 - script: |
+    date -R
+    sudo rm -rf /etc/localtime
+    sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    date -R
+  displayName: 'check and set Time zone'
+
+- script: |
     gem install bundler
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
