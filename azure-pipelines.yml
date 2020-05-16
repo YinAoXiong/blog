@@ -12,19 +12,19 @@ pool:
 steps:
 - task: UseRubyVersion@0
   inputs:
-    versionSpec: '>= 2.5'
+    versionSpec: '2.6.6'
 
 - script: |
     gem install bundler
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 
-- script: bundle exec jekyll build
+- script: bundle exec jekyll build -V
   displayName: 'bundle exec jekyll'
 
 - script: |
     set -x
-    wget -c http://collection.b0.upaiyun.com/softwares/upx/upx-linux-amd64-v0.2.4 -O upx
+    wget -c http://collection.b0.upaiyun.com/softwares/upx/upx-linux-amd64-v0.2.6 -O upx
     chmod +x upx
     ./upx login yax-blog $(UPX_USER) $(UPX_PSW)
     ./upx sync _site/ / --delete
