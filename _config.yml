@@ -11,12 +11,12 @@ email_username:  aoxiongyin@qq.com
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
-google_tracking_id: UA-89678848-1
+# google_tracking_id: UA-89678848-1
 
 # Baidu autopush and Baidu Analytics
 # To enable baidu autopush and baidu analytics,uncoment below line with true and a baidu tracking ID
-open_baiduAutoPush: true
-baidu_tracking_id: 0a3215e31b6e078f9c3028fc00baafa3
+# open_baiduAutoPush: true
+# baidu_tracking_id: 0a3215e31b6e078f9c3028fc00baafa3
 
 # The config of comment system Valine
 learn_cloud_app_id:
